@@ -38,6 +38,10 @@ Then configure the rules you want to use under the rules section.
 }
 ```
 
-## Supported Rules
+## Developer info
 
-- Fill in provided rules here
+To publish this package to npm you have to increase package number and execute this
+
+```
+npm publish
+```
