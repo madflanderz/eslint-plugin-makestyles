@@ -15,6 +15,9 @@ var rule = require("../../../lib/rules/makestyles-with-name"),
 // Tests
 //------------------------------------------------------------------------------
 
+var errorMessage =
+  'No name for style defined. Please add {name: "ComponentName"} as second argument of makeStyles function call.';
+
 var ruleTester = new RuleTester();
 ruleTester.run("makestyles-with-name", rule, {
   valid: [
@@ -29,8 +32,7 @@ ruleTester.run("makestyles-with-name", rule, {
       code: "var useStyles = makeStyles({})",
       errors: [
         {
-          message:
-            'No name for style defined. Please add {name: "ComponentName"} as second argument.',
+          message: errorMessage,
           type: "VariableDeclaration"
         }
       ]
@@ -39,8 +41,16 @@ ruleTester.run("makestyles-with-name", rule, {
       code: "var useStyles = makeStyles({}, { names: 'Name' })",
       errors: [
         {
-          message:
-            'No name for style defined. Please add {name: "ComponentName"} as second argument.',
+          message: errorMessage,
+          type: "VariableDeclaration"
+        }
+      ]
+    },
+    {
+      code: "var useStyles = makeStyles({}, { name: '' })",
+      errors: [
+        {
+          message: errorMessage,
           type: "VariableDeclaration"
         }
       ]
