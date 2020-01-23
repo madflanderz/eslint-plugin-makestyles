@@ -1,6 +1,6 @@
 # This rule ensures that a name is used inside material uis makeStyles function. (makestyles-with-name)
 
-This rule helps to ensure developer does not forget to add a `name` to `makeStyles` function. 
+This rule helps to ensure the developer does not forget to add a `name` option to [makeStyles] function. 
 
 ## Rule Details
 
@@ -30,6 +30,13 @@ var useStyles = makeStyles({
 
 ```
 
-## Further Reading
+## Links
 
-If there are other links that describe the issue this rule addresses, please include them here in a bulleted list.
+- [Material-UI]
+- [makeStyles hook][makeStyles]
+- [github project][github]
+
+
+[Material-UI]: https://material-ui.com/
+[makeStyles]: https://material-ui.com/styles/api/#makestyles-styles-options-hook
+[github]: https://github.com/madflanderz/eslint-plugin-makestyles

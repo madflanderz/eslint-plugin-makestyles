@@ -1,6 +1,34 @@
 # eslint-plugin-makestyles
 
-This plugin ensures that a name is used inside makeStyles.
+This rule helps to ensure the developer does not forget to add a `name` option to [makeStyles] function. 
+
+## Rule Details
+
+Examples of **incorrect** code for this rule:
+
+```js
+
+var useStyles = makeStyles({
+  root: {
+    color: "red"
+  }
+})
+
+```
+
+Examples of **correct** code for this rule:
+
+```js
+
+var useStyles = makeStyles({
+  root: {
+    color: "red"
+  }
+}, {
+  name: "MyComponent"
+})
+
+```
 
 ## Installation
 
@@ -33,15 +61,18 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
   "rules": {
-    "makestyles/makestyles-with-name": 2
+    "makestyles/makestyles-with-name": "error"
   }
 }
 ```
 
-## Developer info
+## Links
 
-To publish this package to npm you have to increase package number and execute this
+- [Material-UI]
+- [makeStyles hook][makeStyles]
+- [github project][github]
 
-```
-npm publish
-```
+
+[Material-UI]: https://material-ui.com/
+[makeStyles]: https://material-ui.com/styles/api/#makestyles-styles-options-hook
+[github]: https://github.com/madflanderz/eslint-plugin-makestyles
