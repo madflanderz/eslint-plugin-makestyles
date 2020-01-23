@@ -8,6 +8,10 @@
     "eslint-plugin",
     "materialui"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/madflanderz/eslint-plugin-makestyles/"
+  },
   "author": "Martin Anders",
   "main": "lib/index.js",
   "scripts": {
