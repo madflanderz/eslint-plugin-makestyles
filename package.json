@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-makestyles",
-  "version": "0.1.4",
+  "version": "0.1.7",
   "description": "This plugin ensures that a name is used inside makeStyles.",
   "keywords": [
     "eslint",
@@ -16,17 +16,24 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha tests --recursive",
-    "publish": "npm publish"
+    "pub": "npm publish"
   },
   "dependencies": {
     "requireindex": "~1.1.0"
   },
   "devDependencies": {
     "eslint": "~4.18.2",
+    "husky": "^4.2.0",
     "mocha": "^7.0.0"
   },
   "engines": {
     "node": ">=0.10.0"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
+  }
 }
