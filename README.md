@@ -1,33 +1,32 @@
 # eslint-plugin-makestyles
 
-This rule helps to ensure the developer does not forget to add a `name` option to [makeStyles] function. 
+This rule helps to ensure the developer does not forget to add a `name` option to [Material-UI makeStyles][makestyles] function.
 
 ## Rule Details
 
 Examples of **incorrect** code for this rule:
 
 ```js
-
 var useStyles = makeStyles({
   root: {
     color: "red"
   }
-})
-
+});
 ```
 
 Examples of **correct** code for this rule:
 
 ```js
-
-var useStyles = makeStyles({
-  root: {
-    color: "red"
+var useStyles = makeStyles(
+  {
+    root: {
+      color: "red"
+    }
+  },
+  {
+    name: "MyComponent"
   }
-}, {
-  name: "MyComponent"
-})
-
+);
 ```
 
 ## Installation
@@ -69,10 +68,9 @@ Then configure the rules you want to use under the rules section.
 ## Links
 
 - [Material-UI]
-- [makeStyles hook][makeStyles]
+- [makeStyles hook][makestyles]
 - [github project][github]
 
-
-[Material-UI]: https://material-ui.com/
-[makeStyles]: https://material-ui.com/styles/api/#makestyles-styles-options-hook
+[material-ui]: https://material-ui.com/
+[makestyles]: https://material-ui.com/styles/api/#makestyles-styles-options-hook
 [github]: https://github.com/madflanderz/eslint-plugin-makestyles

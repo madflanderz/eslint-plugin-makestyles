@@ -1,6 +1,6 @@
-# This rule ensures that a name is used inside material uis makeStyles function. (makestyles-with-name)
+# This rule ensures that a name is used inside material-ui makeStyles function. (makestyles-with-name)
 
-This rule helps to ensure the developer does not forget to add a `name` option to [makeStyles] function. 
+This rule helps to ensure the developer does not forget to add a `name` option to [Material-UI makeStyles][makeStyles] function. 
 
 ## Rule Details
 
