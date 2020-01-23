@@ -47,7 +47,7 @@ $ npm install eslint-plugin-makestyles --save-dev
 
 ## Usage
 
-Add this to your your `.eslintrc` configuration file to get our recommended rule setup (only warnings). 
+Add this to your your `.eslintrc` configuration file to get our recommended rule setup (only warnings).
 
 ```
 "extends": [
@@ -55,7 +55,7 @@ Add this to your your `.eslintrc` configuration file to get our recommended rule
   ]
 ```
 
-If you do not use the preset you will need to specify individual rules and add extra configuration.
+If you do not want to use the preset you will need to specify individual rules and add extra configuration.
 
 Add `makestyles` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
