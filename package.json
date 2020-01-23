@@ -15,7 +15,8 @@
   "author": "Martin Anders",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha tests --recursive"
+    "test": "mocha tests --recursive",
+    "publish": "npm publish"
   },
   "dependencies": {
     "requireindex": "~1.1.0"
