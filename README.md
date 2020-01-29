@@ -1,5 +1,7 @@
 # eslint-plugin-makestyles
 
+There is a feature of [Material-UI makeStyles][makestyles] function that adds a name to the generated className. If you use it then you get nice classNames like this `MyComponent-root-123` instead of `makeStyles-root-123`
+
 This rule helps to ensure the developer does not forget to add a `name` option to [Material-UI makeStyles][makestyles] function.
 
 ## Rule Details

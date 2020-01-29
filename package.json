@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-makestyles",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "This plugin ensures that a name is used inside makeStyles.",
   "keywords": [
     "eslint",
